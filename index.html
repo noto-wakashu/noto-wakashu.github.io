@@ -202,9 +202,14 @@
   .uses p { margin: 0; padding: 18px 14px 20px; font-size: 16px; font-weight: 700; text-align: center; line-height: 1.7; }
   .bank { max-width: 640px; margin: 0 auto; background: #fff; color: #000; padding: 24px 30px; text-align: center; }
   .bank .h { font-size: 15px; font-weight: 700; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin: 0 0 12px; }
-  .bank .tbd { color: var(--key); font-weight: 700; line-height: 1.9; margin: 0; }
+  .bank .acct { display: inline-block; text-align: left; margin: 0; }
+  .bank .acct div { display: flex; align-items: baseline; gap: 1.2em; padding: 5px 0; }
+  .bank .acct div + div { border-top: 1px dotted #ddd; }
+  .bank .acct dt { width: 5em; flex: none; color: #555; font-size: 13px; }
+  .bank .acct dd { margin: 0; font-weight: 700; font-size: 16px; }
+  .bank .acct dd.big { font-size: 20px; letter-spacing: .06em; }
   .support .small { text-align: center; font-size: 13px; margin: 18px 0 0; }
-  .support p { text-wrap: pretty; } .bank .tbd, .support .small, .support .after { text-wrap: balance; }
+  .support p { text-wrap: pretty; } .support .small, .support .after { text-wrap: balance; }
   .support .usehd { text-align: center; font-size: 17px; font-weight: 700; margin: 0 0 10px; }
   .support .intro { max-width: 760px; margin: 0 auto 26px; font-size: 14px; line-height: 2; }
   .support .after { max-width: 760px; margin: -26px auto 46px; font-size: 13px; line-height: 1.9; text-align: center; }
@@ -526,7 +531,13 @@
       <p class="after">その他、能登の地域づくりや若者の挑戦を支えるために必要な経費に活用させていただきます。</p>
       <div class="bank">
         <p class="h">振込先</p>
-        <p class="tbd">【口座は会で確かめてから載せます】<br>銀行名・支店名・口座の種類<br>口座番号・口座名義</p>
+        <dl class="acct">
+          <div><dt>金融機関</dt><dd>興能信用金庫</dd></div>
+          <div><dt>支店</dt><dd>本店（001）</dd></div>
+          <div><dt>種類</dt><dd>普通</dd></div>
+          <div><dt>口座番号</dt><dd class="big">8111844</dd></div>
+          <div><dt>口座名義</dt><dd class="big">ノトワカシュノカイ</dd></div>
+        </dl>
       </div>
       <p class="small">いただいた寄付の使い道は、<span class="nw">本ホームページにて</span><span class="nw">ご報告します。</span></p>
     </div>
