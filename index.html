@@ -101,7 +101,7 @@
   .dotlinks a { font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }
   .dotlinks a::before { content: ""; width: 20px; height: 14px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Cpath fill='%23c8641e' transform='rotate(-24)' d='M-50 0 Q-9 -7 0 -36 Q9 -7 50 0 Q9 7 0 36 Q-9 7 -50 0Z'/%3E%3C/svg%3E") center/contain no-repeat; }
 
-  /* お知らせ（縦に並べる・押せない） */
+  /* お知らせ（縦に並べる・Instagramの投稿がある行だけ押せる） */
   .news { background: var(--bg-gray2); padding: 56px 0 60px; }
   .news .box { max-width: 980px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 180px 1fr; gap: 30px; }
   .news .hl h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: .06em; line-height: 1.5; }
@@ -111,6 +111,9 @@
   .news li time { font-size: 14px; font-weight: 700; color: #555; }
   .news li img { width: 92px; height: 62px; object-fit: cover; }
   .news li p { text-wrap: balance; margin: 0; font-size: 15px; font-weight: 700; line-height: 1.7; }
+  .news li p a { color: inherit; }
+  .news li p a .ext { font-size: 11px; margin-left: 6px; color: var(--key); }
+  .news li p a:hover { color: var(--key); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
   .news .more-row { margin: 18px 0 0; }
 
   /* 会について（丸を散らす） */
@@ -399,6 +402,7 @@
       <div class="hl"><h2>お知らせ</h2><p class="en">NEWS</p></div>
       <div>
         <ul>
+          <li><time class="en">2026.11</time><img src="img/news_r27.jpg" alt="第27回 若衆会（七尾市中島町小牧）の集合写真"><p><a href="https://www.instagram.com/p/DgCdGyvE5sc/" target="_blank" rel="noopener"><span class="nw">第27回 若衆会を</span><span class="nw">七尾市中島町小牧で</span><span class="nw">開きました<svg class="ic ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></p></li>
           <li><time class="en">2026.09.30</time><img src="img/news_r26.jpg" alt="第26回 若衆会（輪島市南志見）の様子"><p><span class="nw">第26回 若衆会を</span><span class="nw">輪島市南志見で開きました</span></p></li>
           <li><time class="en">2026.08.07</time><img src="img/news_r25.jpg" alt="第25回 若衆会のBBQ（奥能登ブリッジ）"><p><span class="nw">第25回 若衆会を</span><span class="nw">奥能登ブリッジで</span><span class="nw">開きました（BBQ）</span></p></li>
           <li><time class="en">2026.07</time><img src="img/news_abare.jpg" alt="あばれ祭でキリコを担ぐ若衆"><p><span class="nw">あばれ祭で</span><span class="nw">メンバー34人が</span><span class="nw">キリコを担ぎました</span></p></li>
@@ -432,7 +436,7 @@
       </div>
     </div>
     <div class="row2">
-      <img src="img/about_bg_r24.jpg" alt="第24回 若衆会のようす">
+      <img src="img/about_bg_inekari.jpg" alt="稲刈りのあと、はざ掛けの前で笑うメンバー">
       <div class="over">
         <div class="l">“集まる・挑戦する・学ぶ”<br>能登の若者がつながる<br>コミュニティ</div>
         <div class="r">能登若衆の会は、<br>能登に生まれ育った人、<br>移り住んだ人、県外から通う人が<br>市町や仕事の垣根を越えて集まる会です。<br>「能登を世界で一番<br>ワクワクが生まれる場所に」を<br>目指しています。</div>
